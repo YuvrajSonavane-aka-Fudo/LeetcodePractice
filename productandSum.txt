@@ -1,0 +1,15 @@
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        mul = 1
+        sum1 = 0
+        list1 = []
+        while n > 0:
+            list1.append(n%10)
+            n = n//10
+        for i in list1:
+            mul *= i
+            sum1 += i
+        
+        return mul-sum1
+
+       
