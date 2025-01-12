@@ -1,0 +1,9 @@
+class Solution:
+    def truncateSentence(self, s: str, k: int) -> str:
+        list1 = s.split(" ")
+        list2 = []
+        for i in range(k):
+            list2.append("".join(list1[i]))
+        return " ".join(list2)
+
+        
